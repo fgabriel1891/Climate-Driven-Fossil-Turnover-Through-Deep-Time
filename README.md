@@ -1,4 +1,4 @@
-# Neogene mammal turnover and climate: review repository
+# Climate change shape the deep-time assembly of biological diversity
 
 This repository contains the occurrence data, spatial regions, R analysis code, and figure renderers used for the manuscript's generalized dissimilarity models (GDMs). Bristol BRIDGE climate files are retrieved directly from the source archive by `download_climate.R`; they are excluded from Git. Run commands from the repository root. The entry point `run_review.R` prepares the data, fits the models, writes summary tables, and renders the analytical figures. It does not download data or install packages.
 
@@ -9,7 +9,7 @@ R with `ncdf4`, `terra`, `sf`, `palaeoverse`, `dplyr`, `h3jsr`, `betapart`, `gdm
 ## Run
 
 ```r
-setwd("path/to/to-GCB")
+setwd("path/to/Climate-Driven-Fossil-Turnover-Through-Deep-Time")
 source("download_climate.R")
 source("run_review.R")
 ```

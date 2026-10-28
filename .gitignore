@@ -1,0 +1,8 @@
+outputs/
+**/output/
+.Rhistory
+.RData
+.Rproj.user/
+README_GAB.md
+DATA/climate/raw/
+DATA/climate/download_manifest.csv

@@ -1,0 +1,9 @@
+stage_id,stage,experiment,older_ma,younger_ma,boundary_source
+1,Aquitanian,tfgsW,23.03,20.44,ICS_2023_06
+2,Burdigalian,tfgsX,20.44,15.98,ICS_2023_06
+3,Langhian,tfgsY,15.98,13.82,ICS_2023_06
+4,Serravallian,tfgsZ,13.82,11.63,ICS_2023_06
+5,Tortonian,tfgSa,11.63,7.246,ICS_2023_06
+6,Messinian,tfgSb,7.246,5.333,ICS_2023_06
+7,Zanclean,tfgSc,5.333,3.600,ICS_2023_06
+8,Piacenzian,tfgSd,3.600,2.58,ICS_2023_06

@@ -1,0 +1,32 @@
+# Run from the repository root. This script performs the analyses and renders
+# figures used in the manuscript and supplementary material.
+source("load_pipeline.R")
+cfg <- bristol_config()
+preflight_bristol(cfg)
+
+prepare_bristol_fossils(cfg)
+prepare_bristol_climate(cfg)
+prepare_bristol_assemblages(cfg)
+compute_bristol_turnover(cfg)
+fit_bristol_gdms(cfg)
+summarize_bristol_gdms(cfg)
+manuscript_tables(cfg)
+publication_figures(cfg)
+
+source("fig1_conceptual/render_fig1.R")
+source("fig2_temperature/render_fig2_temperature.R")
+source("fig3_fossils/render_fig3.R")
+source("fig04_h3_splines/render_fig04_h3_splines.R")
+source("fig5_resolution/render_fig5.R")
+source("fig5_space_time/render_space_time_sensitivity.R")
+source("fig_hypothesis_test/render_hypothesis_test.R")
+source("scripts/plot_gdm_time_geography.R")
+
+render_fig1(cfg, overwrite = TRUE)
+render_fig2_climate(cfg, annotations = TRUE, trends_title = "", maps_title = "", overwrite = TRUE)
+render_fig3(cfg, overwrite = TRUE)
+render_fig04_h3_splines(cfg, overwrite = TRUE)
+render_fig5(cfg, overwrite = TRUE)
+render_space_time_sensitivity(cfg, overwrite = TRUE)
+render_hypothesis_test(cfg, overwrite = TRUE)
+render_fig_time_geography(cfg, overwrite = TRUE)
